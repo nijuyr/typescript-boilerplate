@@ -6,7 +6,11 @@
   "scripts": {
     "build": "ttsc",
     "test": "jest",
-    "start": "npm run build && node dist/index.js"
+    "start": "npm run build && node dist/index.js",
+    "prettier": "prettier \"src/**/*.+(js|jsx|json|ts|tsx|md|mdx|graphql)\"",
+    "prettier:write": "npm run prettier -- --write",
+    "prettier:list-different": "prettier --list-different \"src/**/*.+(js|jsx|json|ts|tsx|md|mdx|graphql)\"",
+    "format": "npm run prettier:write"
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,13 @@
   },
   "homepage": "https://github.com/nijuyr/typescript-boilerplate#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
     "cz-conventional-changelog": "3.2.0",
+    "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "prettier": "^2.0.5",
     "ttypescript": "^1.5.10",
     "typescript": "^3.9.3",
     "typescript-transform-paths": "^1.1.14"

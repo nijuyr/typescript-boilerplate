@@ -1,0 +1,30 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nijuyr/typescript-boilerplate.git"
+  },
+  "author": "Eugene Yu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nijuyr/typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/nijuyr/typescript-boilerplate#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "3.2.0",
+    "typescript": "^3.9.3",
+    "typescript-transform-paths": "^1.1.14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
